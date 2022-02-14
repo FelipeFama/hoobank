@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./imagens/capa.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+header .logo img {
+  width: 12rem;
+  margin: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #d0d3d4;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+
+.servicos {
+  width: 100%;
+  height: 366px;
+  background-color: #472562;
+  color: #fff;
+  padding: 0 2%;
+}
+
+.presentation {
+  padding: 5%;
+}
+
+.presentation h1 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.presentation p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.presentation ul {
+  padding-left: 1rem;
+}
+
+.presentation ul li {
+  padding: 0.5rem;
+}
+
+.presentation button {
+  background-color: #ff703d;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5rem;
+  width: 165px;
+  height: 40px;
+  margin-top: 0.5rem;
+}
+
+.presentation button:hover {
+  background-color: #e67e22;
+}
+
+.device {
+  background: url(./imagens/device.png);
+  background-size: 89%;
+  margin-left: 45%;
+  margin-top: -38%;
+  position: absolute;
+  width: 52%;
+  height: 31rem;
+  background-repeat: no-repeat;
+}
+
+.sobre {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.sobre.container {
+  max-width: 1000px;
+}
+
+.sobre h2 {
+  color: #472562;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.sobre p {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  max-width: 900px;
+  text-transform: capitalize;
+}
+
+.sobre img {
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  top: 70px;
+}
+
+.equipe {
+  width: 100%;
+  display: flex;
+}
+
+.time {
+  color: white;
+  float: left;
+  width: 50%;
+  padding: 140px 0 90px 0;
+  background: #835fa7;
+}
+
+.wraper-time {
+  max-width: 600px;
+  float: right;
+  padding: 0 30px;
+}
+
+.time h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 23px;
+}
+
+.time p {
+  font-size: 15px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+
+.autor {
+  float: left;
+  width: 50%;
+  padding: 140px 0 90px 0;
+  background: white;
+}
+
+.sobre-autor {
+  float: left;
+  max-width: 600px;
+  padding-left: 30px;
+}
+
+.titulo-autor {
+  float: left;
+  width: 100%;
+}
+
+.wraper-titulo-autor {
+  float: left;
+}
+
+.titulo-autor h2 {
+  color: #232323;
+  font-weight: 400;
+  font-size: 21px;
+  padding-right: 20px;
+}
+
+.titulo-autor p {
+  font-size: 13px;
+  color: #232323;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.titulo-autor .img-autor {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-image: url("./imagens/actor1.png");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.texto-autor {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 32px;
+}
+
+.texto-autor p {
+  color: #232323;
+  font-size: 15px;
+}
+
+.slider-bullets {
+  width: 100%;
+  float: left;
+  padding-left: 30px;
+  margin-top: 12px;
+}
+
+.slider-bullets span {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(200, 200, 200);
+}
+
+.contato {
+  background-color: #472563;
+  padding: 100px 0;
+  color: white;
+}
+
+.content-contato {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form {
+  padding-left: 10px;
+  width: 50%;
+}
+
+.form h2 {
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.form p {
+  font-size: 15px;
+  padding-right: 10px;
+  max-width: 18rem;
+}
+
+.form form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form form input[type="text"] {
+  border: 1px solid rgb(200, 200, 200);
+  width: 60%;
+  height: 50px;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.form form textarea {
+  margin-top: 0.5rem;
+  width: 60%;
+  height: 166px;
+  padding: 1rem;
+}
+
+.form form input[type="submit"] {
+  background-color: #ff703d;
+  color: white;
+  margin-top: 0.8rem;
+  height: 3rem;
+  width: 25%;
+  border-radius: 2rem;
+  border: none;
+}
+
+.form form input[type="submit"]:hover {
+  background-color: #e67e22;
+}
+
+.map-content {
+  color: white;
+  width: 50%;
+  padding: 6rem 2rem;
+}
+
+.map-content h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.map-container {
+  margin-top: 10px;
+}
+
+.map-wrapper {
+  width: 45%;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+footer .content-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content-footer p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .servicos {
+    height: 364px;
+  }
+  .device {
+    position: relative;
+    width: 55%;
+    height: 58vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+  .toggle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(./imagens/menu.png);
+    filter: invert(1);
+    color: #472562;
+    z-index: 11;
+    margin-left: 18rem;
+  }
+  .toggle.active {
+    background: url(./imagens/close.png);
+    background-position: center;
+  }
+  header nav ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+  header nav ul li a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .device {
+    display: none;
+  }
+  .content-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 3rem;
+  }
+  .form {
+    text-align: center;
+    width: 40%;
+  }
+  .form form {
+    width: 30rem;
+  }
+  .map-content {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .contato {
+    display: flex;
+  }
+}
+@media screen and (max-width: 590px) {
+  .toggle {
+    margin-left: 6rem;
+  }
+}
