@@ -4,27 +4,40 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  background: url(./imagens/capa.png);
-  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 header {
+  background: url(./imagens/capa.png);
+  background-size: cover;
+}
+
+header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+}
+
+header .logo {
+  width: 100%;
 }
 
 header .logo img {
   width: 12rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 header nav ul {
   display: flex;
-  list-style-type: none;
   font-size: 1.2rem;
+  list-style-type: none;
 }
 
 header nav ul li {
@@ -41,7 +54,7 @@ header nav ul li a:hover {
   color: #d0d3d4;
 }
 
-.content {
+header .text-content {
   color: white;
   display: flex;
   flex-direction: column;
@@ -50,12 +63,12 @@ header nav ul li a:hover {
   text-align: center;
 }
 
-.content h1 {
+header .text-content h1 {
   font-size: 2.5rem;
   font-weight: 400;
 }
 
-.content p {
+header .text-content p {
   font-size: 1.2rem;
 }
 
@@ -63,12 +76,22 @@ header nav ul li a:hover {
   width: 100%;
   height: 366px;
   background-color: #472562;
-  color: #fff;
   padding: 0 2%;
 }
 
+.servicos .container {
+  max-width: 1000px;
+  height: calc(100% + 30px);
+  display: flex;
+  align-items: center;
+}
+
 .presentation {
+  color: white;
+  left: 6rem;
   padding: 5%;
+  position: relative;
+  width: 50%;
 }
 
 .presentation h1 {
@@ -78,7 +101,7 @@ header nav ul li a:hover {
 
 .presentation p {
   font-size: 1.5rem;
-  padding: 1rem 0;
+  margin-top: 1rem;
 }
 
 .presentation ul {
@@ -86,7 +109,8 @@ header nav ul li a:hover {
 }
 
 .presentation ul li {
-  padding: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .presentation button {
@@ -97,7 +121,7 @@ header nav ul li a:hover {
   border-radius: 5rem;
   width: 165px;
   height: 40px;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .presentation button:hover {
@@ -106,25 +130,23 @@ header nav ul li a:hover {
 
 .device {
   background: url(./imagens/device.png);
-  background-size: 89%;
-  margin-left: 45%;
-  margin-top: -38%;
-  position: absolute;
-  width: 52%;
-  height: 31rem;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: -8%;
+  width: 50%;
+  height: 64vh;
 }
 
 .sobre {
-  background-color: #fff;
+  background: #fff;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
-.sobre.container {
+.sobre .container {
   max-width: 1000px;
 }
 
@@ -132,22 +154,20 @@ header nav ul li a:hover {
   color: #472562;
   font-size: 2rem;
   font-weight: 300;
-  margin-top: 0.5rem;
+  margin-top: 2.5rem;
 }
 
 .sobre p {
-  display: inline-block;
   font-size: 1.2rem;
   margin-top: 1rem;
   max-width: 900px;
-  text-transform: capitalize;
 }
 
 .sobre img {
   position: relative;
   width: 100%;
-  margin-top: 3rem;
-  top: 70px;
+  margin-top: 0.5rem;
+  top: 2rem;
 }
 
 .equipe {
@@ -259,19 +279,17 @@ header nav ul li a:hover {
 .contato {
   background-color: #472563;
   padding: 100px 0;
-  color: white;
 }
 
-.content-contato {
-  max-width: 1280px;
-  margin: 0 auto;
+.contato-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
 }
 
 .form {
-  padding-left: 10px;
+  color: white;
   width: 50%;
+  padding-left: 0.5rem;
 }
 
 .form h2 {
@@ -281,7 +299,6 @@ header nav ul li a:hover {
 
 .form p {
   font-size: 15px;
-  padding-right: 10px;
   max-width: 18rem;
 }
 
@@ -293,7 +310,8 @@ header nav ul li a:hover {
 
 .form form input[type="text"] {
   border: 1px solid rgb(200, 200, 200);
-  width: 60%;
+  width: 90%;
+  max-width: 480px;
   height: 50px;
   margin-top: 0.5rem;
   padding-left: 1rem;
@@ -301,8 +319,9 @@ header nav ul li a:hover {
 
 .form form textarea {
   margin-top: 0.5rem;
-  width: 60%;
-  height: 166px;
+  width: 90%;
+  max-width: 480px;
+  height: 30vh;
   padding: 1rem;
 }
 
@@ -311,7 +330,7 @@ header nav ul li a:hover {
   color: white;
   margin-top: 0.8rem;
   height: 3rem;
-  width: 25%;
+  width: 30%;
   border-radius: 2rem;
   border: none;
 }
@@ -323,7 +342,6 @@ header nav ul li a:hover {
 .map-content {
   color: white;
   width: 50%;
-  padding: 6rem 2rem;
 }
 
 .map-content h2 {
@@ -333,10 +351,13 @@ header nav ul li a:hover {
 
 .map-container {
   margin-top: 10px;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
 }
 
 .map-wrapper {
-  width: 45%;
+  width: 100%;
 }
 
 footer {
@@ -354,34 +375,20 @@ footer .content-footer p {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 991px) {
-  .servicos {
-    height: 364px;
-  }
-  .device {
-    position: relative;
-    width: 55%;
-    height: 58vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   header nav ul {
     display: none;
   }
   .toggle {
-    width: 30px;
+    width: 10%;
     height: 30px;
     cursor: pointer;
-    background: url(./imagens/menu.png);
-    filter: invert(1);
+    background: url(./imagens/menu.png) no-repeat;
     color: #472562;
     z-index: 11;
-    margin-left: 18rem;
   }
   .toggle.active {
-    background: url(./imagens/close.png);
-    background-position: center;
+    background: url(./imagens/close.png) center no-repeat;
   }
   header nav ul.navigation.active {
     position: fixed;
@@ -393,21 +400,32 @@ footer .content-footer p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #fff;
+    background: #472562;
     z-index: 10;
   }
   header nav ul li a {
     font-size: 1.6rem;
-    font-weight: 400;
-    color: black;
   }
-  .presentation {
+  .servicos {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
   .device {
     display: none;
+  }
+  .equipe {
+    display: grid;
+  }
+  .time {
+    width: 100%;
+    display: flex;
+  }
+  .autor {
+    width: 100%;
+  }
+  .contato-wrapper {
+    display: grid;
+    justify-content: center;
   }
   .content-contato {
     display: flex;
@@ -415,25 +433,16 @@ footer .content-footer p {
     align-items: center;
     padding-right: 3rem;
   }
-  .form {
-    text-align: center;
-    width: 40%;
-  }
+
   .form form {
     width: 30rem;
   }
   .map-content {
     padding: 1rem 2rem;
   }
-}
-
-@media screen and (max-width: 690px) {
-  .contato {
+  footer .content-footer {
     display: flex;
-  }
-}
-@media screen and (max-width: 590px) {
-  .toggle {
-    margin-left: 6rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
