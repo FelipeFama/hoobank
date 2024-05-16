@@ -3,9 +3,9 @@ import "./styles/global.css";
 function App() {
   return (
     <>
-      <section className="flex">
-        <article>test</article>
-      </section>
+      <main className="bg-primary w-full">
+        <section>test</section>
+      </main>
     </>
   );
 }
