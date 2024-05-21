@@ -1,10 +1,11 @@
+import { box } from "./constants/boxes";
 import "./styles/global.css";
 
 function App() {
   return (
     <>
       <main className="bg-primary w-full">
-        <section>test</section>
+        <header className={`${box.paddingX} ${box.flexCenter}`}></header>
       </main>
     </>
   );
