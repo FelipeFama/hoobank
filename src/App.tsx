@@ -1,14 +1,13 @@
-import { box } from "./constants/boxes";
+import { Navbar } from "./components";
+
 import "./styles/global.css";
 
-function App() {
+export default function App() {
   return (
     <>
       <main className="bg-primary w-full">
-        <header className={`${box.paddingX} ${box.flexCenter}`}></header>
+        <Navbar />
       </main>
     </>
   );
 }
-
-export default App;
