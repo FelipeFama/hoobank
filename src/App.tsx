@@ -1,5 +1,4 @@
 import { Hero, Navbar } from "./components";
-
 import "./styles/global.css";
 
 export default function App() {
