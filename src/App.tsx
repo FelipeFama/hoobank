@@ -1,4 +1,4 @@
-import { Navbar } from "./components";
+import { Hero, Navbar } from "./components";
 
 import "./styles/global.css";
 
@@ -7,6 +7,7 @@ export default function App() {
     <>
       <main className="bg-primary w-full">
         <Navbar />
+        <Hero />
       </main>
     </>
   );
