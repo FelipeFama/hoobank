@@ -1,4 +1,4 @@
-import { Business, Hero, Navbar, Stats } from "./components";
+import { Billing, Business, Hero, Navbar, Stats } from "./components";
 import { box } from "./constants/boxes";
 import "./styles/global.css";
 
@@ -11,6 +11,7 @@ export default function App() {
         <section className={`${box.boxWidth} ${box.paddingX}`}>
           <Stats />
           <Business />
+          <Billing />
         </section>
       </main>
     </>
