@@ -1,4 +1,5 @@
 import { box, layout } from "../constants/boxes";
+import Button from "./Button";
 
 export default function Business() {
   return (
@@ -13,6 +14,7 @@ export default function Business() {
           building credit, earning rewards and saving money. But with hundreds
           of credit cards on the market.
         </p>
+        <Button styles={`mt-10`} />
       </article>
     </section>
   );
