@@ -1,4 +1,12 @@
-import { Billing, Business, CardDeal, Hero, Navbar, Stats } from "./components";
+import {
+  Billing,
+  Business,
+  CardDeal,
+  Hero,
+  Navbar,
+  Stats,
+  Testimonials,
+} from "./components";
 import { box } from "./constants/boxes";
 import "./styles/global.css";
 
@@ -13,6 +21,7 @@ export default function App() {
           <Business />
           <Billing />
           <CardDeal />
+          <Testimonials />
         </section>
       </main>
     </>

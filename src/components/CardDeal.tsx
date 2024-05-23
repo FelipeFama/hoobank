@@ -1,4 +1,3 @@
-import React from "react";
 import { box, layout } from "../constants/boxes";
 import Button from "./Button";
 import { card } from "../utils";
