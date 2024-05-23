@@ -1,4 +1,8 @@
-export default function Button({ styles }: { styles: string }) {
+interface ButtonProps {
+  styles?: string;
+}
+
+export default function Button({ styles }: ButtonProps) {
   return (
     <button
       type="button"

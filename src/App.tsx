@@ -2,6 +2,8 @@ import {
   Billing,
   Business,
   CardDeal,
+  Clients,
+  CTA,
   Hero,
   Navbar,
   Stats,
@@ -22,6 +24,8 @@ export default function App() {
           <Billing />
           <CardDeal />
           <Testimonials />
+          <Clients />
+          <CTA />
         </section>
       </main>
     </>
