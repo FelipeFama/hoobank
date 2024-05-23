@@ -1,4 +1,6 @@
+import { feedback } from "../constants";
 import { box } from "../constants/boxes";
+import { FeedbackCard } from "./FeedbackCard";
 
 export default function Testimonials() {
   return (
@@ -17,7 +19,11 @@ export default function Testimonials() {
           </p>
         </aside>
       </article>
-      <article className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]"></article>
+      <article className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
+        {feedback.map((card) => (
+          <FeedbackCard key={card.id} {...card} />
+        ))}
+      </article>
     </section>
   );
 }
