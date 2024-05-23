@@ -1,4 +1,4 @@
-import { Billing, Business, Hero, Navbar, Stats } from "./components";
+import { Billing, Business, CardDeal, Hero, Navbar, Stats } from "./components";
 import { box } from "./constants/boxes";
 import "./styles/global.css";
 
@@ -12,6 +12,7 @@ export default function App() {
           <Stats />
           <Business />
           <Billing />
+          <CardDeal />
         </section>
       </main>
     </>
