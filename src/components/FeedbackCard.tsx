@@ -1,12 +1,6 @@
 import React from "react";
 import { quotes } from "../utils";
-
-interface FeedBackProps {
-  content: string;
-  name: string;
-  title: string;
-  img: string;
-}
+import { FeedBackProps } from "../types";
 
 export const FeedbackCard: React.FC<FeedBackProps> = ({
   content,

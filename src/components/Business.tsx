@@ -1,15 +1,9 @@
 import { features } from "../constants";
 import { box, layout } from "../constants/boxes";
+import { FeatureCardProps } from "../types";
 import Button from "./Button";
 
-interface featureCardProps {
-  icon: string;
-  title: string;
-  content: string;
-  index: number;
-}
-
-const FeatureCard = ({ icon, title, content, index }: featureCardProps) => (
+const FeatureCard = ({ icon, title, content, index }: FeatureCardProps) => (
   <aside
     className={`flex flex-row p-6 rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"

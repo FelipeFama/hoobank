@@ -1,6 +1,4 @@
-interface ButtonProps {
-  styles?: string;
-}
+import { ButtonProps } from "../types";
 
 export default function Button({ styles }: ButtonProps) {
   return (
