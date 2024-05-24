@@ -4,6 +4,7 @@ import {
   CardDeal,
   Clients,
   CTA,
+  Footer,
   Hero,
   Navbar,
   Stats,
@@ -26,6 +27,7 @@ export default function App() {
           <Testimonials />
           <Clients />
           <CTA />
+          <Footer />
         </section>
       </main>
     </>

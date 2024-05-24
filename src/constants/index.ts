@@ -122,7 +122,7 @@ export const clients = [
   },
 ];
 
-export const footerLink = [
+export const footerLinks = [
   {
     id: "footerLinks-1",
     title: "Useful Links",
